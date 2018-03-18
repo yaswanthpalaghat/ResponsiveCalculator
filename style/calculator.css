@@ -1,0 +1,266 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  line-height: 100%;
+  overflow: hidden;
+  font-size: 10px;
+  font-weight: normal;
+  background-color: yellow;
+}
+
+.x-row{
+  width: 32rem;
+  height: 6rem;
+  background-color: blue;
+  display: block;
+}
+
+.y-row{
+  display: inline-block;
+  background-color: red;
+  width: 8rem;
+  height: 24rem;
+  vertical-align: top;
+  margin-left: -3px;
+}
+
+.row-block {
+  display: inline-block;
+  background-color: green;
+  vertical-align: top;
+  width: 24rem;
+  height: 24rem;
+}
+
+.row{
+  display: block;
+  width: 100%;
+}
+
+input {
+  /* text nodes in the source code affect the layout */
+  margin-right: -2px;
+  background: transparent;
+  border: 0;
+  vertical-align: top;
+  border-radius: 0;
+}
+
+input[disabled] {
+  pointer-events: none;
+}
+
+.row-block .row input{
+  font-size: 3rem;
+  font-weight: 200;
+  color: #e7e7e7;
+  border-top: .1rem solid #191919;
+  border-right: .1rem solid #191919;
+}
+
+input.small {
+  display: inline-block;
+  width: 7.9rem;
+  height: 5.9rem;
+}
+
+.y-row input{
+  display: block;
+  width: 100%;
+  border-top: .1rem solid #191919;
+}
+
+.double-y{
+  width: 7.9rem;
+  height: 12rem;
+  display: block;
+}
+
+.double-x{
+  width: 15.9rem;
+  height: 5.9rem;
+  display: inline-block;
+  line-height: 5.9rem;
+}
+
+input[value="C"]{
+  color: white;
+  font-size: 2.3rem;
+  font-weight: 500;
+  border-right: .1rem solid #191919;
+}
+
+input[value="+"]{
+  background: url(images/icon_plus.png) center no-repeat;
+  color: transparent;
+}
+
+input[value="-"]{
+  background: url(images/icon_minus.png) center no-repeat;
+  color: transparent;
+}
+
+input[value="×"]{
+  background: url(images/icon_multiply.png) center no-repeat;
+  color: transparent;
+}
+
+input[value="÷"]{
+  border-right: .1rem solid #191919;
+  background: url(images/divide.png) center no-repeat;
+  color: transparent;
+}
+
+input[value="="]{
+  background: url(images/icon_equal.png) center no-repeat;
+  color: transparent;
+}
+
+input::-moz-focus-inner {
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+
+/* Result Display */
+#display {
+  color: white;
+  background-color: #f97c17;
+  height: 15.6rem;
+  line-height: 15.6rem;
+  width: 32rem;
+  position: relative;
+}
+
+#display div {
+  transform-origin: right center;
+  position: absolute;
+  right: 3rem;
+  height: 100%;
+  line-height: 15.6rem;
+  font-weight: 200;
+  font-size: 8.2rem;
+}
+
+@media (min-width: 321px), (min-height: 481px){
+  #display {
+    width: 100%;
+    height: calc(100% / 3);
+  }
+
+  #display div {
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  #panel{
+    width: 100%;
+    height: calc((100% / 3) * 2);
+  }
+
+  .x-row{
+    width: 100%;
+    height: calc(100% / 5);
+  }
+
+  .row-block {
+    width: calc((100% / 4) * 3);
+    height: calc((100% / 5) * 4);
+  }
+
+  .y-row{
+    width: calc(100% / 4);
+    height: calc((100% / 5) * 4);
+  }
+
+  .x-row input.small {
+    width: calc(100% / 4);
+    height: 100%;
+  }
+
+  .x-row input[value="÷"]{
+    width: calc((100% / 4) - 0.1rem);
+  }
+
+  .y-row input.small {
+    width: 100%;
+    height: calc(100% / 4 );
+  }
+
+  .y-row .double-y{
+    width: 100%;
+    height: calc(100% / 2);
+  }
+
+  .row{
+    height: calc(100% / 4)
+  }
+
+  .row input.small {
+    width: calc((100% / 3) - 0.1rem);
+    height: calc(100% - 0.1rem);
+  }
+
+  .x-row .double-x{
+    width: calc((100% / 2) - 0.1rem);
+    height: 100%;
+    line-height: 100%;
+  }
+
+  .row .double-x{
+    width: calc(((100% / 3) * 2) - 0.1rem);
+    height: 100%;
+    line-height: 100%;
+  }
+}
+
+@media (-moz-device-pixel-ratio: 1.5){
+  input[value="+"]{
+    background: url(images/icon_plus@1.5x.png) center no-repeat;
+  }
+
+  input[value="-"]{
+    background: url(images/icon_minus@1.5x.png) center no-repeat;
+  }
+
+  input[value="×"]{
+    background: url(images/icon_multiply@1.5x.png) center no-repeat;
+  }
+
+  input[value="÷"]{
+    background: url(images/divide@1.5x.png) center no-repeat;
+  }
+
+  input[value="="]{
+    background: url(images/icon_equal@1.5x.png) center no-repeat;
+  }
+}
+
+@media (-moz-device-pixel-ratio: 2){
+  input[value="+"]{
+    background: url(images/icon_plus@2x.png) center no-repeat;
+  }
+
+  input[value="-"]{
+    background: url(images/icon_minus@2x.png) center no-repeat;
+  }
+
+  input[value="×"]{
+    background: url(images/icon_multiply@2x.png) center no-repeat;
+  }
+
+  input[value="÷"]{
+    background: url(images/divide@2x.png) center no-repeat;
+  }
+
+  input[value="="]{
+    background: url(images/icon_equal@2x.png) center no-repeat;
+  }
+}
+
+input:active,
+input.active,
+.active {
+  background-color: #008EAB;
+}

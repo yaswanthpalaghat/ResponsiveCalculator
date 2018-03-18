@@ -1,0 +1,91 @@
+{
+  "name": "Calculator",
+  "description": "Calculator",
+  "version": "2.0.4",
+  "type": "web",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "The Gaia Team",
+    "url": "https://github.com/mozilla-b2g/gaia"
+  },
+  "locales": {
+    "ar": {
+      "name": "الحاسبة",
+      "description": "الحاسبة"
+    },
+    "en": {
+      "name": "Calculator",
+      "description": "Calculator"
+    },
+    "fr": {
+      "name": "Calculatrice",
+      "description": "Calculatrice"
+    },
+    "zh-TW": {
+      "name": "計算機",
+      "description": "計算機"
+    },
+    "pl": {
+      "name": "Kalkulator",
+      "description": "Kalkulator"
+    },
+    "es": {
+      "name": "Calculadora",
+      "description": "Calculadora"
+    },
+    "pt": {
+      "name": "Calculadora",
+      "description": "Calculadora"
+    },
+    "hr": {
+      "name": "Kalkulator",
+      "description": "Kalkulator"
+    },
+    "cs": {
+      "name": "Kalkulačka",
+      "description": "Kalkulačka"
+    },
+    "de": {
+      "name": "Taschenrechner",
+      "description": "Taschenrechner"
+    },
+    "hu": {
+      "name": "Számológép",
+      "description": "Számológép"
+    },
+    "ro": {
+      "name": "Calculator",
+      "description": "Calculator"
+    },
+    "ru": {
+      "name": "Калькулятор",
+      "description": "Калькулятор"
+    },
+    "sr": {
+      "name": "Калкулатор",
+      "description": "Калкулатор"
+    },
+    "sr-Cyrl": {
+      "name": "Калкулатор",
+      "description": "Калкулатор"
+    },
+    "sr-Latn": {
+      "name": "Kalkulator",
+      "description": "Kalkulator"
+    },
+    "el": {
+      "name": "Αριθμ/νή",
+      "description": "Αριθμ/νή"
+    }
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "84": "/style/icons/icon_84.png",
+    "126": "/style/icons/icon_126.png",
+    "142": "/style/icons/icon_142.png",
+    "189": "/style/icons/icon_189.png",
+    "256": "/style/icons/icon_256.png",
+    "284": "/style/icons/icon_284.png"
+  },
+  "orientation": "portrait-primary"
+}
